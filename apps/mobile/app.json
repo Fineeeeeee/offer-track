@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "OfferJing",
+    "slug": "offer-jing-mobile",
+    "version": "1.3.27",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "OfferJing needs microphone access only when you start interview recording."
+      }
+    },
+    "android": {
+      "package": "com.offerjing.mobile",
+      "versionCode": 30,
+      "adaptiveIcon": {
+        "backgroundColor": "#F8F7F4",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "enableBackgroundRecording": true
+        }
+      ],
+      "./plugins/withSherpaMavenMirror",
+      "./plugins/withOfferJingAudioConverter",
+      "expo-secure-store",
+      "expo-notifications",
+      "expo-sharing",
+      "expo-status-bar",
+      "@react-native-community/datetimepicker",
+      "expo-asset",
+      "expo-splash-screen"
+    ]
+  }
+}

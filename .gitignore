@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Expo and generated native output
+.expo/
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+ios/build/
+
+# Local credentials and private browser/session data
+.env
+.env.*
+!.env.example
+**/cookies.json
+**/browser-data/
+**/data/
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+
+# Local test captures and device dumps
+/*.xml
+/*.png
+/*.log
+_update-notifier-last-checked
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project-local Xiaohongshu MCP runtime and private session data
+tools/xiaohongshu-mcp/*.exe
+tools/xiaohongshu-mcp/*.zip
+tools/xiaohongshu-mcp/*.tar.gz
+tools/xiaohongshu-mcp/*.log
+tools/xiaohongshu-mcp/cookies.json
+tools/xiaohongshu-mcp/data/
+tools/xiaohongshu-mcp/browser-data/
